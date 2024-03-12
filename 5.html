@@ -4,17 +4,43 @@
      * 1 2 3 *
      * * * *  * -->
 
-     <script type="text/javascript">
-        for (let i = 1; i <= 5; i++) {
-            for (j = 1; j <= 5; j++) {
-                if (i == 1 || j == 1 || i == 5 || j == 5) {
-                    document.write('* ');
-                } else {
-                    for(k=1; k<=1; k++){
-                        document.write(k);
+<script type="text/javascript">
+    for (let i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            if (i == 1 || j == 1 || i == 5 || j == 5) {
+                document.write('* ');
+            } else {
+                for (k = 1; k <= 3; k++) {
+                    for (l = 1; j <= 3; j++) {
+                        if (k == 2 || k == 3) {
+                            break;
+                        }
                     }
+                    document.write(k + " ")
+
+
                 }
             }
-            document.write('<br/>');
         }
-    </script>
+        document.write('<br/>');
+    }
+
+    //         function printPattern(rows, cols) {
+    //     for (let i = 0; i < rows; i++) {
+    //         let row = '';
+    //         for (let j = 0; j < cols; j++) {
+    //             if (i === 0 || i === rows - 1 || j === 0 || j === cols - 1) {
+    //                 row += '* ';
+    //             } else {
+    //                 row += (j + ' ');
+    //             }
+    //         }
+    //         document.write(row)
+    //         document.write('<br>')
+    //     }
+    // }
+
+    // printPattern(5, 5);
+
+
+</script>
